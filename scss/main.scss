@@ -50,6 +50,8 @@ $buttondistance: 12pt;
 
 .tabs li {
   flex: 1 1 auto;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
   text-transform: uppercase;
   text-align: center;
   padding: 0.5em 0.5em 1em;
@@ -226,6 +228,7 @@ button {
   border-radius: 0.9em;
   background: rgba(255, 255, 255, 0.7);
   border: none;
+  padding: 0;
   cursor: pointer;
   height: 1.8em;
   width: 1.8em;
@@ -445,6 +448,19 @@ table {
   font-weight: bold;
   min-width: 1.5em;
   box-sizing: border-box;
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) {
+  .tabs {
+    padding: 1em 0 0 !important;
+    margin: 0;
+    list-style: none;
+    display: block;
+    font-family: Roboto, sans-serif;
+    @include shadow(1);
+  } 
 }
 
 @media screen and (max-width: 80em) {
