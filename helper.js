@@ -130,7 +130,13 @@ function attributeEntry(el, label, value) {
 
   var tr = document.createElement("tr")
   var th = document.createElement("th")
-  th.textContent = label
+  if (typeof label === "string")
+    th.textContent = label
+  else {
+    th.appendChild(label)
+    tr.className = "routerpic"
+  }
+
   tr.appendChild(th)
 
   var td = document.createElement("td")
