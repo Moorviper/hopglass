@@ -34,6 +34,7 @@ Execute these commands on your server as a normal user to prepare the dependenci
     git clone https://github.com/hopglass/hopglass
     cd hopglass
     npm install
+    npm install leaflet
     npm install grunt-cli
 
 # Building

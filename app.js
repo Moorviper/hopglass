@@ -1,8 +1,7 @@
 require.config({
   baseUrl: "lib",
   paths: {
-    "leaflet": "../bower_components/leaflet/dist/leaflet",
-    "leaflet.label": "../bower_components/Leaflet.label/dist/leaflet.label",
+    "leaflet": "../node_modules/leaflet/dist/leaflet",
     "leaflet.providers": "../bower_components/leaflet-providers/leaflet-providers",
     "chroma-js": "../bower_components/chroma-js/chroma.min",
     "moment": "../bower_components/moment/min/moment-with-locales.min",
@@ -17,7 +16,6 @@ require.config({
     "jshashes": "../bower_components/jshashes/hashes"
   },
   shim: {
-    "leaflet.label": ["leaflet"],
     "leaflet.providers": ["leaflet"],
     "tablesort": {
       exports: "Tablesort"
